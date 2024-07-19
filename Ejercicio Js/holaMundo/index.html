@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón que muestra un mensaje</title>
+</head>
+
+<body>
+
+    <button id="miBoton">Pulsa aquí</button>
+
+    <script>
+        // script.js
+
+        // Selección del botón
+        const miBoton = document.getElementById('miBoton');
+
+        // Función que muestra el mensaje al hacer clic en el botón
+        function mostrarMensaje() {
+            alert('Hola Mundo');
+        }
+
+        // Asignación del evento clic al botón
+        miBoton.addEventListener('click', mostrarMensaje);
+    </script>
+</body>
+
+</html>

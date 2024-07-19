@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Texto por ID</title>
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <div class="nivel1">
+            <h2>Elemento Nivel 1</h2>
+            <div class="nivel2">
+                <spam id="nivel2">Texto del Nivel 2</spam>
+                <br><br>
+                <div class="nivel3">
+                    <span id="textoCambiante1">Texto 1</span>
+                    <br>
+                    <span id="textoCambiante3">Texto 2</span>
+                    <br><br>
+                    <div class="nivel4">
+                        <label for="selector">Seleccionar ID:</label>
+                        <select id="selector">
+                            <option value="nivel2">Texto del Nivel 2</option>
+                            <option value="textoCambiante1">Texto 1</option>
+                            <option value="textoCambiante3">Texto 2</option>
+                        </select>
+                        <button onclick="cambiarTexto('selector')">Cambiar Texto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript dentro del HTML
+        function cambiarTexto(selectorId) {
+            // Obtener el valor seleccionado del selector
+            const selector = document.getElementById(selectorId);
+            const idSeleccionado = selector.value; // Valor actual seleccionado en el selector
+            const nuevoTexto = prompt(`Introduce el nuevo texto para ${idSeleccionado}:`);
+            if (nuevoTexto !== null) {
+                // Cambiar el texto visible del elemento
+                document.getElementById(idSeleccionado).textContent = nuevoTexto;
+                // Cambiar el value del option seleccionado en el selector
+                const option = selector.querySelector(`option[value="${idSeleccionado}"]`);
+                option.textContent = nuevoTexto;
+                option.value = nuevoTexto; // Actualizar el value del option
+            }
+        }
+    </script>
+
+</body>
+
+</html>

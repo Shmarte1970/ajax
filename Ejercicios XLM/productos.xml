@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="productos.xsl"?>
+<productos>
+    <producto>
+        <nombre>Monitor 4K</nombre>
+        <precio>200€</precio>
+    </producto>
+    <producto>
+        <nombre>Teclado Vintage</nombre>
+        <precio>150€</precio>
+    </producto>
+    <producto>
+        <nombre>HDD SATA II</nombre>
+        <precio>30€</precio>
+    </producto>
+</productos>

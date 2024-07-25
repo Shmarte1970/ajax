@@ -1,0 +1,38 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1>
+        <form method="post">
+            <label for="inputText">Ingrese texto:</label>
+            <input type="text" id="inputText" name="inputText" />
+            <br />
+            <input type="checkbox" id="checkBox" name="checkBox" />
+            <label for="checkBox">Checkbox activo</label>
+            <br />
+            <button type="submit">Actualizar</button>
+        </form>
+        <div style="font-size: 16px; color:@Model.TextColor;">
+            @Model.InputText
+        </div>
+        @if (Model.CheckBox)
+        {
+            <div style="color: red;">
+                Checkbox activo en rojo
+            </div>
+        }
+    </div>
+</body>
+</html>

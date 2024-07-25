@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest Example Json</title>
+</head>
+<body>
+    <h1>XMLHttpRequest Example</h1>
+    <button id="fetchData">Obten Datos</button>
+
+    <script>
+        document.getElementById('fetchData').addEventListener('click', function() {
+            // Crear una instancia de XMLHttpRequest
+            var xhr = new XMLHttpRequest();
+            
+            // Configurar la solicitud: método GET, URL del servidor
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+            
+            // Configurar el evento onload para manejar la respuesta
+            xhr.onload = function() {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    // Respuesta recibida con éxito
+                    console.log('Respuesta del servidor:', xhr.responseText);
+                } else {
+                    // Error en la respuesta
+                    console.error('Error en la solicitud. Estado:', xhr.status, 'Texto:', xhr.statusText);
+                }
+            };
+            
+            // Configurar el evento onerror para manejar errores de red
+            xhr.onerror = function() {
+                console.error('Error en la solicitud.');
+            };
+            
+            // Enviar la solicitud
+            xhr.send();
+        });
+    </script>
+</body>
+</html>
+

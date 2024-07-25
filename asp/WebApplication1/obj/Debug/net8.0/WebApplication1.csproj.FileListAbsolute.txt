@@ -1,0 +1,8 @@
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.AssemblyInfoInputs.cache
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.AssemblyInfo.cs
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.RazorAssemblyInfo.cache
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.RazorAssemblyInfo.cs
+C:\xampp\htdocs\ajax\asp\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json

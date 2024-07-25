@@ -1,0 +1,13 @@
+body {
+    background-color: #fff;
+    color: #000;
+}
+.container {
+    margin-top: 50px;
+}
+.login-form, .details-form {
+    background-color: #f8e5c0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
